@@ -16,7 +16,7 @@ export default async function NotesPage() {
   const notes = await getNotes();
 
   // This displays the notes we have
-  return(
+  return (
     <div>
       <h1>Notes</h1>
       <div className={styles.grid}>

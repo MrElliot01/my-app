@@ -9,7 +9,7 @@ export default function CreateNote() {
 
   // This section fetches the DB records after there has been a sumbit so we can see the new note without refreshing
   // instead it is called after the form is submitted
-  const create = async(e: React.FormEvent) => {
+  const create = async (e: React.FormEvent) => {
     e.preventDefault()
     await fetch('http://127.0.0.1:8090/api/collections/notes_db/records', {
       method: 'POST',
@@ -48,4 +48,3 @@ export default function CreateNote() {
     </form>
   );
 }
-
